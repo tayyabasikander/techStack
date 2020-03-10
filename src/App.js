@@ -9,9 +9,10 @@ import LibraryList from './components/LibraryList';
 const App = ()=>{
     return(
         <Provider store={createStore(reducers)}>
+            <View style={{flex:1}}>
         <Header headerText="Tech_stack"/>
         <LibraryList />
-        {/* <View /> */}
+            </View>
         </Provider>
     )
 }
